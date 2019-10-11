@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/network_status"
+        android:icon="@drawable/ic_wifi_24px"
+        android:title="Online"
+        app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/settings_item"
+        android:title="@string/settings" />
+    <item
+        android:id="@+id/about_item"
+        android:title="@string/about" />
+</menu>

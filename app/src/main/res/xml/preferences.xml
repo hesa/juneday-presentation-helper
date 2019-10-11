@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Server settings">
+
+        <EditTextPreference
+            android:defaultValue="127.0.0.1"
+            android:key="pref_ip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="IP address" />
+        <EditTextPreference
+            android:defaultValue="9876"
+            android:key="pref_port"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Server port" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Authentication settings">
+        <EditTextPreference
+            android:defaultValue="user"
+            android:key="pref_user"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Username" />
+        <EditTextPreference
+            android:defaultValue="secret"
+            android:key="pref_pass"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Password" />
+        <EditTextPreference
+            android:defaultValue="123"
+            android:key="pref_pin"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Pin code" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="auth_pin"
+            android:title="@string/auth_pin_code" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="auth_user"
+            android:id="@+id/auth_user"
+            android:title="@string/auth_user_pass" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Loudmouth settings">
+    </PreferenceCategory>
+
+</PreferenceScreen>
